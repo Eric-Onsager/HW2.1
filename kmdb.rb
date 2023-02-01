@@ -73,7 +73,7 @@
 Studio.destroy_all
 Movie.destroy_all
 Actor.destroy_all
-
+Role.destroy_all
 
 
 # Generate models and tables, according to the domain model.
@@ -169,21 +169,21 @@ new_actor11.save
 new_role1 = Role.new
 new_role1["role_id"] = 1
 new_role1["character_id"] = "Bruce Wayne"
-new_role1["movie_id"] = Bruce Wayne["id"]
+new_role1["movie_id"] = 1
 new_role1["actor_id"] = 1
 new_role1.save
 
 new_role2 = Role.new
 new_role2["role_id"] = 2
 new_role2["character_id"] = "Alfred"
-new_role2["movie_id"] = Alfred["id"]
+new_role2["movie_id"] = 1
 new_role2["actor_id"] = 2
 new_role2.save
 
 new_role3 = Role.new
 new_role3["role_id"] = 3
 new_role3["character_id"] = "Ra's Al Ghul"
-new_role3["movie_id"] = Liam Neeson["id"]
+new_role3["movie_id"] = 1
 new_role3["actor_id"] = 3
 new_role3.save
 
@@ -191,49 +191,49 @@ new_role3.save
 new_role4 = Role.new
 new_role4["role_id"] = 4
 new_role4["character_id"] = "Rachel Dawes"
-new_role4["movie_id"] = Rachel Dawes["id"]
+new_role4["movie_id"] = 1
 new_role4["actor_id"] = 4
 new_role4.save
 
 new_role5 = Role.new
 new_role5["role_id"] = 5
 new_role5["character_id"] = "Commissioner Gordon"
-new_role5["movie_id"] = Commissioner Gordon["id"]
+new_role5["movie_id"] = 1
 new_role5["actor_id"] = 5
 new_role5.save
 
 new_role6 = Role.new
 new_role6["role_id"] = 6
 new_role6["character_id"] = "Joker"
-new_role6["movie_id"] = Joker["id"]
+new_role6["movie_id"] = 2
 new_role6["actor_id"] = 6
 new_role6.save
 
 new_role7 = Role.new
 new_role7["role_id"] = 7
 new_role7["character_id"] = "Harvey Dent"
-new_role7["movie_id"] = Harvey Dent["id"]
+new_role7["movie_id"] = 2
 new_role7["actor_id"] = 7
 new_role7.save
 
 new_role8 = Role.new
 new_role8["role_id"] = 8
 new_role8["character_id"] = "Bane"
-new_role8["movie_id"] = Bane["id"]
+new_role8["movie_id"] = 3
 new_role8["actor_id"] = 9
 new_role8.save
 
 new_role9 = Role.new
 new_role9["role_id"] = 9
 new_role9["character_id"] = "John Blake"
-new_role9["movie_id"] = John Blake["id"]
+new_role9["movie_id"] = 3
 new_role9["actor_id"] = 10
 new_role9.save
 
 new_role10 = Role.new
 new_role10["role_id"] = 10
 new_role10["character_id"] = "Selina Kyle"
-new_role10["movie_id"] = Selina Kyle["id"]
+new_role10["movie_id"] = 3
 new_role10["actor_id"] = 11
 new_role10.save
 
@@ -243,6 +243,7 @@ puts "studios: #{Studio.all.count}"
 puts "movies: #{Movie.all.count}"
 puts "Actors: #{Actor.all.count}"
 puts "Roles: #{Role.all.count}"
+
 
 # Prints a header for the movies output
 puts "Movies"
