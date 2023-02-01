@@ -166,6 +166,10 @@ new_actor11["actor_id"] = 11
 new_actor11["name"] = "Anne Hathaway"
 new_actor11.save
 
+_______________________________________________
+#NEED TO TIE ACTORS TO ROLE AND ROLE TO MOVIE
+_______________________________________________
+
 new_role1 = Role.new
 new_role1["role_id"] = 1
 new_role1["character_id"] = "Bruce Wayne"
@@ -237,18 +241,19 @@ new_role10["movie_id"] = 3
 new_role10["actor_id"] = 11
 new_role10.save
 
-
-
-puts "studios: #{Studio.all.count}"
-puts "movies: #{Movie.all.count}"
-puts "Actors: #{Actor.all.count}"
-puts "Roles: #{Role.all.count}"
+#Check data inputs
+#puts "studios: #{Studio.all.count}"
+#puts "movies: #{Movie.all.count}"
+#puts "Actors: #{Actor.all.count}"
+#puts "Roles: #{Role.all.count}"
 
 
 # Prints a header for the movies output
 puts "Movies"
 puts "======"
 puts ""
+
+
 
 # Query the movies data and loop through the results to display the movies output.
 # TODO!
